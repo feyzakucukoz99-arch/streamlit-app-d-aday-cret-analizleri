@@ -1,4 +1,6 @@
-import streamlit as st
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as pltimport streamlit as st
 import pandas as pd
 import numpy as np
 import os, unicodedata, smtplib, tempfile, io, re
@@ -307,10 +309,7 @@ def get_filtered_dfs(processed_df_cache_key, processed_df_data, pos_filter, incl
 
 if not pos:
     st.warning("Pozisyon giriniz.")
-else:
-    # BURADAN SONRAKİ TÜM KOD
-``top()
-
+    st.stop()
 df_pos_all, df_pos = get_filtered_dfs(
     _df_raw_cached_key,
     _df_processed,
