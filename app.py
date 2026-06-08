@@ -1,6 +1,4 @@
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as pltimport streamlit as st
+import streamlit as st
 import pandas as pd
 import numpy as np
 import os, unicodedata, smtplib, tempfile, io, re
@@ -10,6 +8,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email import encoders
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 __VERSION__ = "2025-10-10.r28 (Kıdem kolonu ve e-posta ayarları koda gömüldü - GÜVENLİK UYARISI)"
