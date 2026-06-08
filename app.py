@@ -8,7 +8,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email import encoders
-import matplotlib.pyplot as plt
 
 __VERSION__ = "2025-10-10.r28 (Kıdem kolonu ve e-posta ayarları koda gömüldü - GÜVENLİK UYARISI)"
 
