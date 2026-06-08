@@ -306,7 +306,10 @@ def get_filtered_dfs(processed_df_cache_key, processed_df_data, pos_filter, incl
     return df_pos_all_filtered, df_pos_filtered
 
 if not pos:
-    st.warning("Pozisyon giriniz."); st.stop()
+    st.warning("Pozisyon giriniz.")
+else:
+    # BURADAN SONRAKİ TÜM KOD
+``top()
 
 df_pos_all, df_pos = get_filtered_dfs(
     _df_raw_cached_key,
